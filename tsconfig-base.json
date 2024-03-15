@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,  
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,    
+    "inlineSourceMap": false,
+    "lib": ["es2020", "dom"],
+    "target": "ES2020",
+    "module": "NodeNext",
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "moduleResolution": "NodeNext",
+    "noFallthroughCasesInSwitch": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "traceResolution": false,
+    "strictPropertyInitialization": false,
+    "types": ["node"],
+    "composite": true 
+  },
+  "compileOnSave": false,
+  "exclude": ["node_modules", "dist"]
+}

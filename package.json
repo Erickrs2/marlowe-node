@@ -2,11 +2,11 @@
   "name": "marlowe-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {    
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon" ,
-    "build": "tsc"  
+    "start-contracts-marlowe-object": "nodemon --watch 'src/contracts/marlowe-object-flow.ts' --exec \"npx tsc --build src/contracts && node dist/contracts/marlowe-object-flow.js\"",
+    "start-express": "nodemon --watch 'src/express/index.ts' --exec \"npx tsc --build src/express && node dist/express/index.js\"",
+    "build-express": "tsc --build src/express",
+    "build-contracts": "tsc --build src/contracts"
   },
   "type": "module",
   "keywords": [],
@@ -16,16 +16,28 @@
     "@types/compression": "^1.7.5",
     "@types/cookie-parser": "^1.4.7",
     "@types/cors": "^2.8.17",
+    "@types/node": "^20.11.28",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@marlowe.io/wallet": "^0.3.0-beta",
+    "@marlowe.io/adapter": "^0.4.0-beta-rc1",
+    "@marlowe.io/language-core-v1": "^0.4.0-beta-rc1",
+    "@marlowe.io/language-examples": "^0.4.0-beta-rc1",
+    "@marlowe.io/marlowe-object": "^0.4.0-beta-rc1",
+    "@marlowe.io/marlowe-template": "^0.4.0-beta-rc1",
+    "@marlowe.io/runtime-core": "^0.4.0-beta-rc1",
+    "@marlowe.io/runtime-lifecycle": "^0.4.0-beta-rc1",
+    "@marlowe.io/runtime-rest-client": "^0.4.0-beta-rc1",
+    "@marlowe.io/testing-kit": "^0.4.0-beta-rc1",
+    "@marlowe.io/wallet": "^0.4.0-beta-rc1",
     "body-parser": "^1.20.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "fp-ts": "^2.16.3",
+    "lucid-cardano": "^0.10.7"
   }
 }

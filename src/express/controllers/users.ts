@@ -1,8 +1,11 @@
 import express from "express";
 
-export const getAllUsers = async (req: express.Request, res: express.Response) => {
+export const getAllUsers = async (
+  req: express.Request,
+  res: express.Response
+) => {
   try {
-    const response = { res: "getAllUsers6" };
+    const response = { res: "getAllUsers343" };
     return res.status(200).json(response).end();
   } catch (error) {
     console.log(error);
@@ -10,7 +13,10 @@ export const getAllUsers = async (req: express.Request, res: express.Response) =
   }
 };
 
-export const deleteUser = async (req: express.Request, res: express.Response) => {
+export const deleteUser = async (
+  req: express.Request,
+  res: express.Response
+) => {
   try {
     const response = { res: "deleteUser" };
     return res.status(200).json(response).end();
