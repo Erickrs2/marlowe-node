@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start-contract": "nodemon --watch 'src/contracts/marlowe-object-flow.ts' --exec \"npx tsc --build src/contracts && node dist/contracts/marlowe-object-flow.js\"",
+    "start-contract": "nodemon --watch 'src/contracts/marlowe-object-flow.ts' --exec \"npx tsc --build src/contracts && node dist/contracts/marlowe-object-flow.js\"",    
     "start-express": "nodemon --watch 'src/express/index.ts' --exec \"npx tsc --build src/express && node dist/express/index.js\"",
     "build-express": "tsc --build src/express",
     "build-contracts": "tsc --build src/contracts"
